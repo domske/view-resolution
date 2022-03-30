@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Resolution</title>
+    <style>html, body { height: 100%; } body { margin: 0; font-family: Arial; font-size: 3rem; background-color: #222; color: #888; display: flex; justify-content: center; align-items: center; }</style>
+  </head>
+  <body>
+    <script>
+      const update = () => document.body.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+      window.addEventListener('resize', update);
+      update();
+    </script>
+  </body>
+</html>
